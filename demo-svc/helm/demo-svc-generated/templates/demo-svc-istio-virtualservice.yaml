@@ -14,6 +14,6 @@ spec:
   - route:
     - destination:
         host: demo-svc-canary.demo-staging.svc.cluster.local
-      weight: 100
     - destination:
         host: demo-svc-primary.demo-staging.svc.cluster.local
+      weight: 100
