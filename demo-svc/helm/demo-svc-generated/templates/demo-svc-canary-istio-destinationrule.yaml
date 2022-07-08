@@ -1,0 +1,7 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  creationTimestamp: null
+  name: demo-svc-canary
+spec:
+  host: demo-svc-canary.demo-staging.svc.cluster.local
