@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  creationTimestamp: null
+  name: demo-svc
+spec:
+  gateways:
+  - public-gateway.istio-system
+  - mesh
+  hosts:
+  - demo-svc.demo-dev.172.27.197.14.nip.io
+  - demo-svc
+  http:
+  - route:
+    - destination:
+        host: demo-svc.demo-dev.svc.cluster.local
